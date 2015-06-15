@@ -1,5 +1,9 @@
-<ul>
-    <li ng-repeat="project in home.projects">
+<ul  class="project-detail-list" >
+    <li class="project-detail-item" ng-repeat="project in home.projects">
     	<h2>{{::project.name}}</h2>
+    	<img  class="project-thumbnail" src="https://placekitten.com/200/200?image={{::$index}}" alt="Thumbnail of the {{::project.name}} website">
+    	<ul class="hashtag-list">
+    		<li class="hashtag-item" ng-repeat="hashtag in project.hashtags"><span>#{{hashtag}}</span></li>
+    	</ul>
 	</li>
 </ul>

@@ -1,5 +1,9 @@
+@import 'utility/vars';
+@import 'utility/mixins';
+
 @import 'base';
 @import 'footer';
 @import 'header';
 @import 'nav';
-@import 'project_tile';
+@import 'project-tile';
+@import 'lists';

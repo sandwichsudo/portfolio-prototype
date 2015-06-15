@@ -1,14 +1,33 @@
-//colour palette
-
-$primary-color-light:  #512DA8;
-$primary-color:        #673AB7;
-$primary-color-light:  #D1C4E9;
-$primary-color-text:   #FFFFFF;
-$accent-color:         #607D8B;
-$primary-text-color:   #212121;
-$secondary-text-color: #727272;
-$divider-color:        #B6B6B6;
+@include font-face('Didactic', 'Didactic-Regular', 'Didactic', 'serif');
 
 body{
-	//color:$primary-color-text;
+	color:$secondary-text-color;
+	font-family: Arial;
+	margin: 0;
+}
+
+header, main{
+	max-width:$max-width;
+	min-width: $min-width;
+	margin: 0 auto;
+}
+
+h1{
+	font-size: 50px;
+}
+
+h2{
+	font-size: 30px;
+}
+
+h3{
+	font-size: 25px;
+}
+
+h4{
+	font-size: 20px;
+}
+
+h5{
+	font-size: 17px;
 }

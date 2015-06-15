@@ -17,6 +17,7 @@ var htmlPaths = ['./src/app/**/*.html','src/common/**/*.html'];
 var sassPaths = ['./src/app/assets/styles/**/*.scss'];
 var jsPaths = ['./src/app/**/*.js', 'src/common/**/*.js'];
 var imagePaths = ['./src/app/assets/images/**/*.*'];
+var fontPaths = ['./src/app/assets/fonts/**/*.*'];
 var dataPath = './data/**/*.json';
 var outputBaseDirectory = "./build/";
 var vendorPath = 'src/vendor/**/*.js';
@@ -67,6 +68,9 @@ gulp.task('compile', ['images', 'compass', 'lint'], function() {
 
     gulp.src(dataPath)
         .pipe(gulp.dest(outputBaseDirectory+'data/'));
+
+    gulp.src(fontPaths)
+        .pipe(gulp.dest(outputBaseDirectory+'assets/fonts/'));
 
 });
 

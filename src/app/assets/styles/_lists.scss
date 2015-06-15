@@ -1,0 +1,14 @@
+.hashtag-list{
+	list-style: none;
+	margin:0;
+	padding:0;
+
+}
+
+.hashtag-item{
+	display:inline-block;	
+	color:$accent-color;
+	font-weight: bold;
+	margin-right: 5px;
+  	line-height: 1.4em;
+}

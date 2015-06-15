@@ -1,22 +1,25 @@
-<!DOCTYPE html>
-<html >
-  <head>
-  <link rel="stylesheet" type="text/css" href="min/css/styles.css" media="screen" />
-  <script type="text/javascript" src="vendor/angular.min.js"></script>
-  <script type="text/javascript" src="vendor/angular-ui-router.js"></script>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Gilly Ames, Front end developer portfolio</title>
+    <link rel="stylesheet" type="text/css" href="min/css/styles.css" media="screen" />
+    <script type="text/javascript" src="vendor/angular.min.js"></script>
+    <script type="text/javascript" src="vendor/angular-ui-router.js"></script>
 
-  <script src="components/components.js"></script>
+    <script src="components/components.js"></script>
 
-  <script src="services/portfolioServices.js"></script>
+    <script src="services/portfolioServices.js"></script>
 
-  <script src="home/home.js"></script>
+    <script src="home/home.js"></script>
 
-  <script src="app.js"></script>
+    <script src="app.js"></script>
   </head>
 
   <body ng-app="portfolio">
     <portfolioheader></portfolioheader>
-  	<ui-view></ui-view>
+    <main>
+  	   <ui-view></ui-view>
+    </main>
 	 
   </body>
 
