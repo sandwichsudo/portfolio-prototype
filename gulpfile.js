@@ -13,6 +13,13 @@ var webserver = require('gulp-webserver');
 
 // Constants
 var SERVER_PORT = 31415;
+var htmlPaths = ['./src/app/**/*.html','src/common/**/*.html'];
+var sassPaths = ['./src/app/assets/styles/**/*.scss'];
+var jsPaths = ['./src/app/**/*.js', 'src/common/**/*.js'];
+var imagePaths = ['./src/app/assets/images/**/*.*'];
+var dataPath = './data/**/*.json';
+var outputBaseDirectory = "./build/";
+var vendorPath = 'src/vendor/**/*.js';
 
 gulp.task('webserver', function() {
   gulp.src('./build')
@@ -25,7 +32,7 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('compass', function () {
-    return gulp.src('src/app/assets/styles/*.scss')
+    return gulp.src(sassPaths)
         .pipe(compass({
             css: 'build/min/styles',
             sass: 'src/app/assets/styles',
@@ -34,65 +41,53 @@ gulp.task('compass', function () {
         .on('error', function(err) {
             console.log(err.message);
         })
-        .pipe(gulp.dest('./build/min/css'))
+        .pipe(gulp.dest(outputBaseDirectory+'min/css'))
 });
 
 gulp.task('lint', function() {
-    return gulp.src(['src/app/**/*.js', 'src/common/**/*.js'])
+    return gulp.src(jsPaths)
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))
         .pipe(jshint.reporter('fail'))
-        .pipe(gulp.dest('./build/min/js'))
-       // .pipe(refresh(lrserver));
+        .pipe(gulp.dest(outputBaseDirectory))
 });
 
 gulp.task('images', function() {
-    return gulp.src('src/app/assets/images/**/*.*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('./build/min/images'));
+    return gulp.src(imagePaths)
+        .pipe(imagemin(imagePaths))
+        .pipe(gulp.dest(outputBaseDirectory+'min/images'));
 });
 
 gulp.task('compile', ['images', 'compass', 'lint'], function() {
-    gulp.src('src/app/**/*.html')
-/*        .pipe(inject(gulp.src('./build/min/js/templates.js', {read: false}),
-            {
-                starttag: '<!-- inject:templates:js -->',
-                ignorePath: '/.tmp'
-            }
-        ))
-        .pipe(usemin({
-            css:          [minifyCss(), rev()],
-            html:         [minifyHtml({ empty: true })],
-            js:           [uglify(), rev()],
-        }))*/
-        .pipe(gulp.dest('build/'));
+    gulp.src(htmlPaths)
+        .pipe(gulp.dest(outputBaseDirectory));
 
-    gulp.src('src/app/vendor/**/*.js')
-        .pipe(gulp.dest('build/'));
+    gulp.src(vendorPath)
+        .pipe(gulp.dest(outputBaseDirectory+'vendor/'));
 
-    gulp.src('data/**/*.json')
-        .pipe(gulp.dest('build/data/'));
+    gulp.src(dataPath)
+        .pipe(gulp.dest(outputBaseDirectory+'data/'));
 
 });
 
 // Serve tasks
 gulp.task('reload:html', function () {
     console.log("Reloading html");
-    return gulp.src('src/app/**/*.html')
-        .pipe(gulp.dest('build/'))
+    return gulp.src(htmlPaths)
+        .pipe(gulp.dest(outputBaseDirectory))
 })
 
 gulp.task('reload:json', function () {
     console.log("Reloading json");
-    return gulp.src('data/**/*.json')
-        .pipe(gulp.dest('build/'))
+    return gulp.src(dataPath)
+        .pipe(gulp.dest(outputBaseDirectory))
 })
 
 gulp.task('watch', function () {
-    gulp.watch('src/app/assets/styles/**/*.scss', ['compass']);
-    gulp.watch(['src/app/**/*.js', 'src/common/**/*.js'], ['lint']);
-    gulp.watch('src/app/**/*.html', ['reload:html']);
-    gulp.watch('data/**/*.json', ['reload:json']);
+    gulp.watch(sassPaths, ['compass']);
+    gulp.watch(jsPaths, ['lint']);
+    gulp.watch(htmlPaths, ['reload:html']);
+    gulp.watch(dataPath, ['reload:json']);
 });
 
 gulp.task('default', ['compile','webserver','watch']);
