@@ -2,21 +2,21 @@
 <html >
   <head>
   <link rel="stylesheet" type="text/css" href="min/css/styles.css" media="screen" />
-  <script type="text/javascript" src="angular.min.js"></script>
-  <script type="text/javascript" src="angular-ui-router.js"></script>
+  <script type="text/javascript" src="vendor/angular.min.js"></script>
+  <script type="text/javascript" src="vendor/angular-ui-router.js"></script>
 
-  <script src="min/js/components/components.js"></script>
+  <script src="components/components.js"></script>
 
-  <script src="min/js/services/portfolioServices.js"></script>
+  <script src="services/portfolioServices.js"></script>
 
-  <script src="min/js/home/home.js"></script>
+  <script src="home/home.js"></script>
 
-  <script src="min/js/app.js"></script>
+  <script src="app.js"></script>
   </head>
 
   <body ng-app="portfolio">
-	<h1>boo</h1>
-	<ui-view></ui-view>
+    <portfolioheader></portfolioheader>
+  	<ui-view></ui-view>
 	 
   </body>
 
