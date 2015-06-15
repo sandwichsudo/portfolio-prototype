@@ -1,0 +1,23 @@
+[
+	{
+		"id":"ee",
+		"client":"Everything Everywhere",
+		"name": "Digital transformation",
+		"role":"Front end developer",
+		"hashtags":["sass","jquery","jsp","hybris","grunt","git","jira"] 
+	},
+	{
+		"id":"tfl_oyster",
+		"client":"Transport for London",
+		"name":"Oyster online refresh",
+		"role":"Front end developer",
+		"hashtags":["sass","jquery",".Net","Razor","qunit","hogan","grunt","git","bitbucket","jira"] 
+	},
+	{
+		"id":"tfl_ruc",
+		"client":"Transport for London",
+		"name":"London road user charging",
+		"role":"Front end developer",
+		"hashtags":["sass","jquery",".Net","Razor","qunit","hogan","grunt","git","bitbucket","jira"] 
+	}
+]	

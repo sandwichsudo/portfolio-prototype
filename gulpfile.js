@@ -38,7 +38,7 @@ gulp.task('compass', function () {
 });
 
 gulp.task('lint', function() {
-    return gulp.src('src/app/**/*.js')
+    return gulp.src(['src/app/**/*.js', 'src/common/**/*.js'])
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))
         .pipe(jshint.reporter('fail'))
@@ -53,7 +53,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('compile', ['images', 'compass', 'lint'], function() {
-    gulp.src('src/app/*.html')
+    gulp.src('src/app/**/*.html')
 /*        .pipe(inject(gulp.src('./build/min/js/templates.js', {read: false}),
             {
                 starttag: '<!-- inject:templates:js -->',
@@ -70,6 +70,9 @@ gulp.task('compile', ['images', 'compass', 'lint'], function() {
     gulp.src('src/app/vendor/**/*.js')
         .pipe(gulp.dest('build/'));
 
+    gulp.src('data/**/*.json')
+        .pipe(gulp.dest('build/data/'));
+
 });
 
 // Serve tasks
@@ -79,9 +82,17 @@ gulp.task('reload:html', function () {
         .pipe(gulp.dest('build/'))
 })
 
+gulp.task('reload:json', function () {
+    console.log("Reloading json");
+    return gulp.src('data/**/*.json')
+        .pipe(gulp.dest('build/'))
+})
+
 gulp.task('watch', function () {
     gulp.watch('src/app/assets/styles/**/*.scss', ['compass']);
-    gulp.watch('src/app/**/*.js', ['lint']);
+    gulp.watch(['src/app/**/*.js', 'src/common/**/*.js'], ['lint']);
+    gulp.watch('src/app/**/*.html', ['reload:html']);
+    gulp.watch('data/**/*.json', ['reload:json']);
 });
 
 gulp.task('default', ['compile','webserver','watch']);
