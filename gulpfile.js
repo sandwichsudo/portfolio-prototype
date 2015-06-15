@@ -70,6 +70,7 @@ gulp.task('compile', ['images', 'compass', 'lint'], function() {
 gulp.task('reload:html', function () {
     console.log("Reloading html");
     return gulp.src('./app/**/*.html')
+        .pipe(gulp.dest('build/'))
         .pipe(refresh(lrserver));
 })
 
