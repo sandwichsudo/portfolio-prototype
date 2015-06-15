@@ -25,11 +25,11 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('compass', function () {
-    return gulp.src('./app/styles/*.scss')
+    return gulp.src('src/app/assets/styles/*.scss')
         .pipe(compass({
             css: 'build/min/styles',
-            sass: 'app/styles',
-            image: 'app/images'
+            sass: 'src/app/assets/styles',
+            image: 'src/app/assets/images'
         }))
         .on('error', function(err) {
             console.log(err.message);
@@ -38,7 +38,7 @@ gulp.task('compass', function () {
 });
 
 gulp.task('lint', function() {
-    return gulp.src('./app/js/**/*.js')
+    return gulp.src('src/app/**/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))
         .pipe(jshint.reporter('fail'))
@@ -47,13 +47,13 @@ gulp.task('lint', function() {
 });
 
 gulp.task('images', function() {
-    return gulp.src('./app/images/**/*.*')
+    return gulp.src('src/app/assets/images/**/*.*')
         .pipe(imagemin())
         .pipe(gulp.dest('./build/min/images'));
 });
 
 gulp.task('compile', ['images', 'compass', 'lint'], function() {
-    gulp.src('./app/*.html')
+    gulp.src('src/app/*.html')
 /*        .pipe(inject(gulp.src('./build/min/js/templates.js', {read: false}),
             {
                 starttag: '<!-- inject:templates:js -->',
@@ -67,7 +67,7 @@ gulp.task('compile', ['images', 'compass', 'lint'], function() {
         }))*/
         .pipe(gulp.dest('build/'));
 
-    gulp.src('./vendor/**/*.js')
+    gulp.src('src/app/vendor/**/*.js')
         .pipe(gulp.dest('build/'));
 
 });
@@ -75,13 +75,13 @@ gulp.task('compile', ['images', 'compass', 'lint'], function() {
 // Serve tasks
 gulp.task('reload:html', function () {
     console.log("Reloading html");
-    return gulp.src('./app/**/*.html')
+    return gulp.src('src/app/**/*.html')
         .pipe(gulp.dest('build/'))
 })
 
 gulp.task('watch', function () {
-    gulp.watch('app/styles/**/*.scss', ['compass']);
-    gulp.watch('app/js/**/*.js', ['lint']);
+    gulp.watch('src/app/assets/styles/**/*.scss', ['compass']);
+    gulp.watch('src/app/**/*.js', ['lint']);
 });
 
 gulp.task('default', ['compile','webserver','watch']);
