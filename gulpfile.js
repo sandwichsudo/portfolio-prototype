@@ -84,4 +84,4 @@ gulp.task('watch', function () {
     gulp.watch('app/js/**/*.js', ['lint']);
 });
 
-gulp.task('default', ['compile','webserver']);
+gulp.task('default', ['compile','webserver','watch']);
