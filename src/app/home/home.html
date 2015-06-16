@@ -1,6 +1,6 @@
 <ul  class="project-detail-list" >
     <li class="project-detail-item" ng-repeat="project in home.projects">
-    	<a href="#" class="project-link">
+    	<a  ui-sref="projectdetail({id:project.id})" href="#" class="project-link">
     		<img  class="project-thumbnail" src="https://placekitten.com/300/190?image={{::$index}}" alt="Thumbnail of the {{::project.name}} website">	
     		<section class="project-info">
 				<h2 class="project-name">{{::project.name}}</h2>
