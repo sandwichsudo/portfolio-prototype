@@ -11,7 +11,10 @@ header, main{
 	max-width:$max-width;
 	min-width: $min-width;
 	margin: 0 auto;
+	padding-left:$gutter-padding;
+	padding-right:$gutter-padding;
 }
+
 
 h1{
 	font-size: 50px;

@@ -1,7 +1,7 @@
 .portfolio-header{
 	background-color:$primary-color;
 	border-top: solid 25px $primary-color-dark;
-	padding:5px 10%;
+	padding:5px $gutter-padding;
 	.main-heading{
 		font-family: "Didactic";
 		color:$primary-color-text;

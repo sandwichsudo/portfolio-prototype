@@ -29,6 +29,5 @@ angular.module("projectdetail", [])
     var projectdetail = this;
 
     projectdetail.project = project;
-    console.log(project.id);
     projectdetail.BASE_URL = BASE_URL;
   });

@@ -20,6 +20,7 @@ var imagePaths = ['./src/app/assets/images/**/*.*'];
 var fontPaths = ['./src/app/assets/fonts/**/*.*'];
 var dataPath = './data/**/*.json';
 var outputBaseDirectory = "./build/";
+var dataBuildDirectory = outputBaseDirectory+'data/';
 var vendorPath = 'src/vendor/**/*.js';
 
 gulp.task('webserver', function() {
@@ -67,7 +68,7 @@ gulp.task('compile', ['images', 'compass', 'lint'], function() {
         .pipe(gulp.dest(outputBaseDirectory+'vendor/'));
 
     gulp.src(dataPath)
-        .pipe(gulp.dest(outputBaseDirectory+'data/'));
+        .pipe(gulp.dest(dataBuildDirectory));
 
     gulp.src(fontPaths)
         .pipe(gulp.dest(outputBaseDirectory+'assets/fonts/'));
@@ -84,7 +85,7 @@ gulp.task('reload:html', function () {
 gulp.task('reload:json', function () {
     console.log("Reloading json");
     return gulp.src(dataPath)
-        .pipe(gulp.dest(outputBaseDirectory))
+        .pipe(gulp.dest(dataBuildDirectory))
 })
 
 gulp.task('watch', function () {

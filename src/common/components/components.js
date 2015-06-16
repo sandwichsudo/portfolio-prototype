@@ -6,6 +6,9 @@ angular.module('components', [])
   })
   .directive('hashtaglist', function () {
     return {
-        templateUrl: 'components/templates/hashtaglist.html'
+        templateUrl: 'components/templates/hashtaglist.html',
+		scope: {
+			project: "="
+		}
     };
   });
