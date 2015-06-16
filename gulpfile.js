@@ -57,7 +57,7 @@ gulp.task('lint', function() {
 gulp.task('images', function() {
     return gulp.src(imagePaths)
         .pipe(imagemin(imagePaths))
-        .pipe(gulp.dest(outputBaseDirectory+'min/images'));
+        .pipe(gulp.dest(outputBaseDirectory+'assets/images'));
 });
 
 gulp.task('compile', ['images', 'compass', 'lint'], function() {

@@ -19,3 +19,16 @@ $break-small:700px;
 $break-large:970px;
 //between the side of the browser and the content
 $gutter-padding:2em;
+
+
+$default-sprite-cols:3;
+$default-sprite-rows:1;
+$default-sprite-height:40px;
+$default-sprite-width:40px;
+
+$default-sprite-sheet-height:$default-sprite-height*$default-sprite-rows;
+$default-sprite-sheet-width:$default-sprite-width*$default-sprite-cols;
+
+$image-path:"../../assets/images/";
+$default-sprite-file-name:"sprite.png";
+$default-sprite-path: $image-path+$default-sprite-file-name;

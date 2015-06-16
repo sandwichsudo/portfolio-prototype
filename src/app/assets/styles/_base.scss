@@ -5,6 +5,11 @@ body{
 	font-family: Arial;
 	margin: 0;
 	font-size:$default-font-size;
+	//from html boilerplate
+	font-size: 100%; 
+	overflow-y: scroll; 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
 }
 
 header, main{
@@ -36,4 +41,15 @@ h4{
 
 h5{
 	font-size: 17px;
+}
+
+//more html boilerplate
+img { -ms-interpolation-mode: bicubic; }
+
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+@media print {
+	img { max-width: 100% !important; }
 }

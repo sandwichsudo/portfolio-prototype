@@ -21,3 +21,45 @@
 @mixin respond-to($breakpoint) {
     @media only screen and (max-width: $breakpoint + px) { @content; }
 }
+
+@mixin standard-sprite() {
+    background-image: url($default-sprite-path);
+}
+
+@mixin svg-icon-position-only($row, $col, $x-offset: 0px, $y-offset: 0px, $img-width: $default-sprite-sheet-width, $img-height: $default-sprite-sheet-height) {
+    background-position: (-1 * $img-width * ($col - 1) + $x-offset) (-1 * $img-height * ($row - 1) + $y-offset);
+}
+
+@mixin icon-pseudo-element($row,$column,$bottom:auto,$left:auto,$right:auto,$top:auto,$sprite:"default"){
+    content: "";
+    position: absolute;
+    @if($sprite =="default"){
+        @include standard-sprite;   
+        height:$default-sprite-height;
+        width:$default-sprite-width; 
+        @include svg-icon-position-only($row,$column);
+    }
+    @elseif($sprite =="large"){
+        @include large-sprite;
+         @include svg-icon-position-only($row, $column, $img-width: $large-sprite-width, $img-height: $large-sprite-height);
+    }
+
+
+    bottom:$bottom;
+    left:$left;
+    right:$right;
+    top:$top;
+}
+
+@mixin add-icon($row,$column,$location:'before',$bottom:auto,$left:auto,$right:auto,$top:auto,$sprite:"default"){
+    @if($location=='before'){
+        &:before{
+            @include icon-pseudo-element($row,$column,$bottom:$bottom,$left:$left,$right:$right,$top:$top,$sprite:$sprite);
+        }
+    }
+    @else{
+        &:after{
+            @include icon-pseudo-element($row,$column,$bottom:$bottom,$left:$left,$right:$right,$top:$top,$sprite:$sprite);
+        }
+    }
+}
