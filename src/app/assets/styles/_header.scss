@@ -14,14 +14,23 @@
 	position:relative;
 }
 
-.open-navigation{
+.toggle-nav{
 	position:relative;
 	@extend .blue-round-button;
 	position:absolute;
 	bottom:-30px;
 	right:10px;
 	z-index:2;
+}
+
+.open-navigation{
+	@extend .toggle-nav;
 	@include add-icon(1,1,$top:10px,$right: 10px);
+}
+
+.close-navigation{
+	@extend .toggle-nav;
+	@include add-icon(2,1,$top:10px,$right: 10px);
 }
 
 .home-link{

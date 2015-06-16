@@ -1,14 +1,18 @@
-<h2>{{::projectdetail.project.name}}</h2>
-<h3>{{::projectdetail.project.client}}</h3>
-<hashtaglist project="projectdetail.project"></hashtaglist>
-<img  class="project-page-image" src="https://placekitten.com/1400/500?image=1" alt="Hero image of the {{::projectdetail.project.name}} project">	
-<p>{{::projectdetail.project.introParagraph}}</p>
-	<img  class="project-page-image" src="https://placekitten.com/700/500?image=2" alt="small image of the {{::projectdetail.project.name}} project">	
-		<img  class="project-page-image" src="https://placekitten.com/700/500?image=3" alt="small image of the {{::projectdetail.project.name}} project">	
-<ul>
-	<li ng-repeat="benefit in projectdetail.project.benefitsDelivered">{{::benefit}}</li>
-</ul>
+<portfolioheader page="projectdetail"></portfolioheader>
+<portfolionav ng-show="projectdetail.isNavOpen" projects="projectdetail.projects" ></portfolionav>
+<main>
+	<h2>{{::projectdetail.project.name}}</h2>
+	<h3>{{::projectdetail.project.client}}</h3>
+	<hashtaglist project="projectdetail.project"></hashtaglist>
+	<img  class="project-page-image" src="https://placekitten.com/1400/500?image=1" alt="Hero image of the {{::projectdetail.project.name}} project">	
+	<p>{{::projectdetail.project.introParagraph}}</p>
+		<img  class="project-page-image" src="https://placekitten.com/700/500?image=2" alt="small image of the {{::projectdetail.project.name}} project">	
+			<img  class="project-page-image" src="https://placekitten.com/700/500?image=3" alt="small image of the {{::projectdetail.project.name}} project">	
+	<ul>
+		<li ng-repeat="benefit in projectdetail.project.benefitsDelivered">{{::benefit}}</li>
+	</ul>
 
-<img  class="project-page-image" src="https://placekitten.com/1400/500?image=1" alt="Hero image of the {{::projectdetail.project.name}} project">	
+	<img  class="project-page-image" src="https://placekitten.com/1400/500?image=1" alt="Hero image of the {{::projectdetail.project.name}} project">	
 
-<p>{{::projectdetail.project.conclusion}}</p>
+	<p>{{::projectdetail.project.conclusion}}</p>
+</main>

@@ -1,7 +1,10 @@
 angular.module('components', [])
   .directive('portfolioheader', function () {
     return {
-        templateUrl: 'components/templates/portfolioheader.html'
+        templateUrl: 'components/templates/portfolioheader.html',
+        scope: {
+          page: "="
+        }
     };
   })
   .directive('hashtaglist', function () {

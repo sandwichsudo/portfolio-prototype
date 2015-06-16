@@ -42,6 +42,17 @@
          x="0"
          y="9.9999704" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4071">
+      <rect
+         style="fill:#ffffff;fill-opacity:0.47368421;stroke:#1a1a1a;stroke-width:1.05411339"
+         id="rect4073"
+         width="89.945885"
+         height="88.945885"
+         x="4.3127594"
+         y="2.7774785" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -51,8 +62,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="3.959798"
-     inkscape:cx="67.318333"
-     inkscape:cy="91.058942"
+     inkscape:cx="48.449175"
+     inkscape:cy="43.609422"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -89,13 +100,6 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-932.36217)">
-    <rect
-       style="fill:#ff8080;fill-opacity:1;stroke:none"
-       id="rect2987-4"
-       width="40"
-       height="40"
-       x="-0.10917997"
-       y="973.19379" />
     <rect
        style="fill:#ff8080;fill-opacity:1;stroke:none"
        id="rect2987-1-0"
@@ -199,6 +203,35 @@
          style="font-size:5px;font-weight:bold;fill:#ffffff;font-family:'\'Helvetica Neue\', Helvetica, Arial-Unicode, Arial, Sans-serif'">Created by Ilsur Aptukov</text>
       <text
          id="text4012"
+         font-weight="bold"
+         font-size="5px"
+         y="120"
+         x="0"
+         style="font-size:5px;font-weight:bold;fill:#ffffff;font-family:'\'Helvetica Neue\', Helvetica, Arial-Unicode, Arial, Sans-serif'">from the Noun Project</text>
+    </g>
+    <g
+       id="g4063"
+       transform="matrix(0.36572371,0,0,0.36572371,3,975.47532)"
+       clip-path="url(#clipPath4071)"
+       style="fill:#ffffff">
+      <g
+         id="g4049"
+         style="fill:#ffffff">
+        <path
+           id="path4051"
+           d="M 82.791,62.861 67.985,48.058 82.793,33.249 c 5.212,-5.218 5.212,-13.709 0,-18.921 -2.528,-2.537 -5.894,-3.929 -9.472,-3.929 -3.58,0 -6.947,1.392 -9.468,3.922 L 49.05,29.125 34.251,14.321 c -2.527,-2.524 -5.889,-3.916 -9.462,-3.916 -3.575,0 -6.936,1.392 -9.46,3.916 -2.538,2.53 -3.934,5.9 -3.93,9.485 0.002,3.582 1.403,6.94 3.922,9.454 l 14.791,14.797 -14.8,14.804 c -5.204,5.211 -5.204,13.703 0.011,18.932 2.53,2.524 5.891,3.918 9.466,3.918 3.579,0 6.94,-1.394 9.468,-3.923 L 49.05,66.992 63.863,81.804 c 2.53,2.526 5.887,3.911 9.458,3.911 3.572,0 6.93,-1.385 9.472,-3.923 2.527,-2.528 3.92,-5.893 3.92,-9.466 0,-3.577 -1.396,-6.941 -3.922,-9.465 z"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff" />
+      </g>
+      <text
+         id="text4053"
+         font-weight="bold"
+         font-size="5px"
+         y="115"
+         x="0"
+         style="font-size:5px;font-weight:bold;fill:#ffffff;font-family:'\'Helvetica Neue\', Helvetica, Arial-Unicode, Arial, Sans-serif'">Created by Alex S. Lakas</text>
+      <text
+         id="text4055"
          font-weight="bold"
          font-size="5px"
          y="120"

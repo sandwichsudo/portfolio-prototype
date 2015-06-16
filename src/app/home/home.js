@@ -24,6 +24,7 @@ angular.module("home", [])
     home.BASE_URL = BASE_URL;
     console.log(home);
     home.projects = projects;
+    home.isNavOpen = false;
   });
 
 
