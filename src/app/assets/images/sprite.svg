@@ -19,7 +19,19 @@
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
-     id="defs4" />
+     id="defs4">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3988">
+      <rect
+         style="fill:#212121;fill-opacity:0.47368421;stroke:none"
+         id="rect3990"
+         width="95"
+         height="90"
+         x="3.9285731"
+         y="2.8571603" />
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -27,9 +39,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="25.829493"
-     inkscape:cy="80.161259"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="69.439541"
+     inkscape:cy="78.331779"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -38,8 +50,9 @@
      inkscape:window-x="639"
      inkscape:window-y="78"
      inkscape:window-maximized="0"
-     guidetolerance="10000"
-     objecttolerance="10000">
+     guidetolerance="20"
+     objecttolerance="20"
+     gridtolerance="10">
     <inkscape:grid
        type="xygrid"
        id="grid2985"
@@ -71,13 +84,6 @@
        width="40"
        height="40"
        x="80.314346"
-       y="932.25629" />
-    <rect
-       style="fill:#ff8080;fill-opacity:1;stroke:none"
-       id="rect2987-7"
-       width="40"
-       height="40"
-       x="40.254871"
        y="932.25629" />
     <rect
        style="fill:#ff8080;fill-opacity:1;stroke:none"
@@ -145,5 +151,30 @@
        x="5.0892868"
        y="940.98468"
        ry="2.1875031" />
+    <g
+       id="g3979"
+       transform="matrix(0.35818693,0,0,0.35818693,42.34835,934.37974)"
+       clip-path="url(#clipPath3988)"
+       style="fill:#ffffff">
+      <path
+         id="path3967"
+         d="M 89.613,48.892 52.229,7.617 C 51.566,6.904 50.638,6.5 49.666,6.5 48.694,6.5 47.765,6.904 47.103,7.617 L 8.511,49.117 C 7.563,50.137 7.309,51.621 7.865,52.899 8.422,54.174 9.682,55 11.074,55 H 21 v 30 c 0,3.313 2.592,6 5.906,6 H 30 32 32.667 34 c 2.209,0 4,-1.791 4,-4 V 72 c 0,-2.209 1.791,-4 4,-4 h 14 c 2.209,0 4,1.791 4,4 v 15 c 0,2.209 1.791,4 4,4 h 6.905 C 74.219,91 77,88.313 77,85 V 55 h 10.259 c 0.008,10e-4 0.015,0 0.02,0 1.934,0 3.5,-1.566 3.5,-3.5 -10e-4,-1.036 -0.451,-1.967 -1.166,-2.608 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff" />
+      <text
+         id="text3969"
+         font-weight="bold"
+         font-size="5px"
+         y="115"
+         x="0"
+         style="font-size:5px;font-weight:bold;fill:#ffffff;font-family:'\'Helvetica Neue\', Helvetica, Arial-Unicode, Arial, Sans-serif'">Created by Melvin Poppelaars</text>
+      <text
+         id="text3971"
+         font-weight="bold"
+         font-size="5px"
+         y="120"
+         x="0"
+         style="font-size:5px;font-weight:bold;fill:#ffffff;font-family:'\'Helvetica Neue\', Helvetica, Arial-Unicode, Arial, Sans-serif'">from the Noun Project</text>
+    </g>
   </g>
 </svg>

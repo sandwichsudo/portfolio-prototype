@@ -66,4 +66,18 @@
 		 	display:block;
 		 }
 	}
+
+	-webkit-transition: all 250ms;
+	-moz-transition: all 250ms;
+	transition: all 250ms;
+	@include box-shadow-helper(1);
+	outline:none;
+	
+	&:hover,&:focus {
+	 @include box-shadow-helper(3);
+	  -webkit-transform: translateY(-5px);
+	  -moz-transform: translateY(-5px);
+	  transform: translateY(-5px);
+	}
 }
+

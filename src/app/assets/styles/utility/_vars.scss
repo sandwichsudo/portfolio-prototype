@@ -23,11 +23,11 @@ $gutter-padding:2em;
 
 $default-sprite-cols:3;
 $default-sprite-rows:1;
-$default-sprite-height:40px;
-$default-sprite-width:40px;
+$default-icon-height:40px;
+$default-icon-width:40px;
 
-$default-sprite-sheet-height:$default-sprite-height*$default-sprite-rows;
-$default-sprite-sheet-width:$default-sprite-width*$default-sprite-cols;
+$default-sprite-sheet-height:$default-icon-height*$default-sprite-rows;
+$default-sprite-sheet-width:$default-icon-width*$default-sprite-cols;
 
 $image-path:"../../assets/images/";
 $default-sprite-file-name:"sprite.png";

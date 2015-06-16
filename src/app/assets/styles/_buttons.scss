@@ -7,11 +7,31 @@
 	&:before{
  		transition:transform 0.5s;
  	}
-	@include add-icon(1,1,$top:10px,$right: 9px);
 	&:focus,&:hover{
 		&:before{
-			-webkit-transform:rotate(180deg);
-		    transform:rotate(180deg);	
+			-webkit-transform:rotate(360deg);
+		    transform:rotate(360deg);	
 		}
+	}
+}
+
+.blue-round-button{
+	@extend .round-button;
+	background-color: $accent-color;
+	-webkit-transition: all 250ms;
+	-moz-transition: all 250ms;
+	transition: all 250ms;
+	@include box-shadow-helper(1);
+	outline:none;
+
+	&:focus,&:hover{
+		 @include box-shadow-helper(3);
+		-webkit-transform: translateY(-5px);
+		-moz-transform: translateY(-5px);
+		transform: translateY(-5px);
+		background: darken($accent-color, 15%);
+	}
+	&:active{
+		background: darken($accent-color, 30%);
 	}
 }
