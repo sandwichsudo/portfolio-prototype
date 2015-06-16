@@ -4,6 +4,7 @@ body{
 	color:$secondary-text-color;
 	font-family: Arial;
 	margin: 0;
+	font-size:$default-font-size;
 }
 
 header, main{
@@ -17,11 +18,13 @@ h1{
 }
 
 h2{
-	font-size: 30px;
+	font-size: 25px;
+	margin-bottom:10px;
 }
 
 h3{
-	font-size: 25px;
+	font-size: 21px;
+	margin-top:10px;
 }
 
 h4{

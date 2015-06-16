@@ -1,7 +1,10 @@
 .project-detail-item{
-	border-bottom: solid 1px $divider-color;
-	padding: 0 20px 15px 140px;
-	position: relative;
+	.project-name{
+
+	}
+	.client-name{
+		color:$secondary-text-color;
+	}
 }
 
 .project-detail-list{
@@ -11,12 +14,60 @@
 }
 
 .project-thumbnail{
-	width:100px;
-	height:100px;
-	-webkit-clip-path: circle(50% at 50% 50%);
-	clip-path: circle(50% at 50% 50%);
-	position:absolute;
-	top:-5px;
-	left:20px;
+	width:100%;
+	height:auto;
+}
+
+.project-info{
+	padding: 10px 20px;
+}
+
+.no-image-available-text{
+	position: absolute;
+	top: 40px;
+	left: 30px;
+	width: 80%;
+	font-weight: bold;
+	color: $secondary-text-color;
+	text-align: center;
+	display: none;	
+}
+@media (min-width: $break-small) {
+	.project-thumbnail{
+		width:50%;
+		vertical-align: top;
+	}
+	.project-info,.no-image-available-text{
+		width:40%;
+	}
+	.project-info{
+		display:inline-block;
+		vertical-align: top;
+	}
+}
+
+
+
+
+
+.project-link{
+	color:$primary-text-color;
+	text-decoration: none;
+	color: $primary-text-color;
+	text-decoration: none;
+
+	border: solid 1px $divider-color;
 	
+	margin:15px 10px;
+	position: relative;
+	display: block;
+	&:hover{
+		 background-color: rgba(182, 182, 182, 0.19);
+		 .project-thumbnail{
+		 	opacity: 0.3;
+		 }
+		 .no-image-available-text{
+		 	display:block;
+		 }
+	}
 }

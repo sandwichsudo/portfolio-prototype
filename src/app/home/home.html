@@ -1,9 +1,18 @@
 <ul  class="project-detail-list" >
     <li class="project-detail-item" ng-repeat="project in home.projects">
-    	<h2>{{::project.name}}</h2>
-    	<img  class="project-thumbnail" src="https://placekitten.com/200/200?image={{::$index}}" alt="Thumbnail of the {{::project.name}} website">
-    	<ul class="hashtag-list">
-    		<li class="hashtag-item" ng-repeat="hashtag in project.hashtags"><span>#{{hashtag}}</span></li>
-    	</ul>
+    	<a href="#" class="project-link">
+    		<img  class="project-thumbnail" src="https://placekitten.com/300/190?image={{::$index}}" alt="Thumbnail of the {{::project.name}} website">	
+    		<section class="project-info">
+				<h2 class="project-name">{{::project.name}}</h2>
+				<h3 class="client-name">{{::project.client}}</h3>
+				
+				<span class="no-image-available-text">Sorry, no image available. So here's a kitten.</span>
+    	
+		    	
+		    	<ul class="hashtag-list">
+		    		<li class="hashtag-item" ng-repeat="hashtag in project.hashtags"><span>#{{hashtag}}</span></li>
+		    	</ul>	
+	    	</section>
+    	</a>
 	</li>
 </ul>
