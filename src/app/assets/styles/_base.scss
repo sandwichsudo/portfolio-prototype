@@ -43,6 +43,10 @@ h5{
 	font-size: 17px;
 }
 
+.guttered{
+	padding-left:$gutter-padding;
+}
+
 //more html boilerplate
 img { -ms-interpolation-mode: bicubic; }
 

@@ -31,6 +31,17 @@
          x="3.9285731"
          y="2.8571603" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4027">
+      <rect
+         style="fill:#ffffff;fill-opacity:0.47368421;stroke:none"
+         id="rect4029"
+         width="100"
+         height="80"
+         x="0"
+         y="9.9999704" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -39,9 +50,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9195959"
-     inkscape:cx="69.439541"
-     inkscape:cy="78.331779"
+     inkscape:zoom="3.959798"
+     inkscape:cx="67.318333"
+     inkscape:cy="91.058942"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -80,32 +91,25 @@
      transform="translate(0,-932.36217)">
     <rect
        style="fill:#ff8080;fill-opacity:1;stroke:none"
-       id="rect2987-1"
-       width="40"
-       height="40"
-       x="80.314346"
-       y="932.25629" />
-    <rect
-       style="fill:#ff8080;fill-opacity:1;stroke:none"
        id="rect2987-4"
        width="40"
        height="40"
        x="-0.10917997"
-       y="972.43616" />
+       y="973.19379" />
     <rect
        style="fill:#ff8080;fill-opacity:1;stroke:none"
        id="rect2987-1-0"
        width="40"
        height="40"
        x="80.009766"
-       y="972.25757" />
+       y="973.0152" />
     <rect
        style="fill:#ff8080;fill-opacity:1;stroke:none"
        id="rect2987-7-9"
        width="40"
        height="40"
        x="39.950298"
-       y="972.25757" />
+       y="973.0152" />
     <rect
        style="fill:#ff8080;fill-opacity:1;stroke:none"
        id="rect2987-48"
@@ -170,6 +174,31 @@
          style="font-size:5px;font-weight:bold;fill:#ffffff;font-family:'\'Helvetica Neue\', Helvetica, Arial-Unicode, Arial, Sans-serif'">Created by Melvin Poppelaars</text>
       <text
          id="text3971"
+         font-weight="bold"
+         font-size="5px"
+         y="120"
+         x="0"
+         style="font-size:5px;font-weight:bold;fill:#ffffff;font-family:'\'Helvetica Neue\', Helvetica, Arial-Unicode, Arial, Sans-serif'">from the Noun Project</text>
+    </g>
+    <g
+       id="g4020"
+       transform="matrix(0.32376065,0,0,0.32376065,85,935.1297)"
+       clip-path="url(#clipPath4027)"
+       style="fill:#ffffff">
+      <path
+         id="path4008"
+         d="M 97.71,11.744 C 97.247,11.223 96.55,10.982 95.859,11.105 L 3.182,27.871 c -0.771,0.14 -1.39,0.717 -1.583,1.476 -0.193,0.76 0.076,1.562 0.687,2.052 l 21.825,17.512 v 31.954 c 0,0.76 0.43,1.453 1.11,1.791 0.681,0.34 1.494,0.261 2.098,-0.197 L 47.611,68.834 68.287,88.727 c 0.378,0.366 0.879,0.563 1.392,0.563 0.167,0 0.335,-0.021 0.5,-0.063 0.675,-0.175 1.21,-0.688 1.413,-1.354 L 98.129,13.656 c 0.203,-0.666 0.045,-1.391 -0.419,-1.912 z m -55.147,52.23 2.131,2.052 -9.246,6.179 7.115,-8.231 z M 40.906,59.211 C 40.594,59.5 28.111,74.714 28.111,74.714 V 47.952 c 0,-0.008 -0.002,-0.017 -0.003,-0.025 L 88.752,18.646 c 0,0 -47.534,40.276 -47.846,40.565 z M 8.212,31.026 88.651,16.474 27.109,46.189 8.212,31.026 z M 68.72,83.577 49.161,64.767 C 49.15,64.756 49.137,64.749 49.125,64.739 L 43.703,59.519 92.59,18.112 68.72,83.577 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff" />
+      <text
+         id="text4010"
+         font-weight="bold"
+         font-size="5px"
+         y="115"
+         x="0"
+         style="font-size:5px;font-weight:bold;fill:#ffffff;font-family:'\'Helvetica Neue\', Helvetica, Arial-Unicode, Arial, Sans-serif'">Created by Ilsur Aptukov</text>
+      <text
+         id="text4012"
          font-weight="bold"
          font-size="5px"
          y="120"

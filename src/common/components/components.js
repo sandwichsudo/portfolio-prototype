@@ -7,8 +7,24 @@ angular.module('components', [])
   .directive('hashtaglist', function () {
     return {
         templateUrl: 'components/templates/hashtaglist.html',
-		scope: {
-			project: "="
-		}
+    		scope: {
+    			project: "="
+    		}
+    };
+  })
+  .directive('portfolionav', function () {
+    return {
+        templateUrl: 'components/templates/portfolionav.html',
+        scope: {
+          projects: "="
+        }
+    };
+  })
+  .directive('projectlist', function () {
+    return {
+        templateUrl: 'components/templates/projectlist.html',
+        scope: {
+          projects: "="
+        }
     };
   });

@@ -15,6 +15,7 @@
 }
 
 .open-navigation{
+	position:relative;
 	@extend .blue-round-button;
 	position:absolute;
 	bottom:-30px;

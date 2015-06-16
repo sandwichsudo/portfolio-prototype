@@ -1,16 +1,5 @@
-<ul  class="project-detail-list" >
-    <li class="project-detail-item" ng-repeat="project in home.projects">
-    	<a  ui-sref="projectdetail({id:project.id})" href="#" class="project-link">
-    		<img  class="project-thumbnail" src="https://placekitten.com/300/190?image={{::$index}}" alt="Thumbnail of the {{::project.name}} website">	
-    		<section class="project-info">
-				<h2 class="project-name">{{::project.name}}</h2>
-				<h3 class="client-name">{{::project.client}}</h3>
-				
-				<span class="no-image-available-text">Sorry, no image available. So here's a kitten.</span>
-    			<hashtaglist project="project"></hashtaglist>
-		    	
-		    	
-	    	</section>
-    	</a>
-	</li>
-</ul>
+<portfolioheader></portfolioheader>
+<portfolionav projects="home.projects"></portfolionav>
+<main>
+	  <projectlist projects="home.projects"></projectlist>
+</main>

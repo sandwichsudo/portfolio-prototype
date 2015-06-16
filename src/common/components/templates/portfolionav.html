@@ -1,0 +1,8 @@
+<nav class="portfolio-navigation">
+	<h3 class="projects-title">Projects</h3>
+	<ul class="nav-list">
+		<li ng-repeat="project in projects">
+			<a class="nav-link" href="#" ui-sref="projectdetail({id:project.id})">{{::project.name}}</a>
+		</li>
+	</ul>
+</nav>
