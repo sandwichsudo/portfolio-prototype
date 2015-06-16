@@ -6,6 +6,15 @@
   background-color: rgba(33, 33, 33, 0.93);
   color: $primary-color-text;
   padding-top:20px;
+  left: 0;
+  @media (min-width:$break-small){
+  	  width: 345px;
+  	  overflow: hidden;
+  }
+}
+
+.nav-container{
+	position:relative;
 }
 
 .nav-link{

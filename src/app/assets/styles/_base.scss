@@ -12,7 +12,7 @@ body{
 	-ms-text-size-adjust: 100%;
 }
 
-header, main, nav{
+header, main,.nav-container{
 	max-width:$max-width;
 	min-width: $min-width;
 	margin: 0 auto;
