@@ -54,4 +54,12 @@ angular.module('components', [])
           myinfo: "="
         }
     };
+  })
+  .directive('portfoliofooter', function () {
+    return {
+        templateUrl: 'components/templates/portfoliofooter.html',
+        scope: {
+          myinfo: "="
+        }
+    };
   });
