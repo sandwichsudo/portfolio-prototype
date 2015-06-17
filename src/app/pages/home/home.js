@@ -18,6 +18,12 @@ angular.module("home", [])
             .then(function (res) {
               return res;
             });
+        },
+        myInfo:function ($http, myInfoService) {
+           return myInfoService.getMyInfo()
+            .then(function (res) {
+              return res.data;
+            });
         }
       }
     });
@@ -25,13 +31,12 @@ angular.module("home", [])
 
   })
 
-  .controller("HomeCtrl", function (projects,navObject, BASE_URL) {
+  .controller("HomeCtrl", function (projects,navObject,myInfo, BASE_URL) {
     var home = this;
     home.BASE_URL = BASE_URL;
     home.projects = projects;
     home.navObject = navObject;
-
-    console.log(navObject);
+    home.myInfo = myInfo;
   });
 
 

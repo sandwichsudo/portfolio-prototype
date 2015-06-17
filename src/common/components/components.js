@@ -46,4 +46,12 @@ angular.module('components', [])
           project: "="
         }
     };
+  })
+  .directive('miniprofile', function () {
+    return {
+        templateUrl: 'components/templates/miniprofile.html',
+        scope: {
+          myinfo: "="
+        }
+    };
   });

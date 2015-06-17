@@ -1,0 +1,16 @@
+.mini-profile{
+	margin:$paragraph-margin auto;
+	overflow:auto;
+	text-align: center;
+	@media(min-width:$break-small){
+		.personal-info,.profile-picture-wrap{
+			float:left;
+		}
+		.personal-info{
+		  margin-left: 30px;
+		}
+		text-align: left;
+		margin-left: 35%;
+	}
+
+}

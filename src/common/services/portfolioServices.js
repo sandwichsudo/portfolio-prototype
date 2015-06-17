@@ -10,6 +10,11 @@ angular.module("portfolioServices", [])
       return $http.get(BASE_URL + "/data/credit.json");
     };
   }) 
+  .service("myInfoService", function ($http, BASE_URL) {
+    this.getMyInfo = function () {
+      return $http.get(BASE_URL + "/data/myinfo.json");
+    };
+  }) 
   .service("navService", function ($http, BASE_URL) {
     this.getNavObject = function () {
       return $http.get(BASE_URL + "/data/projects.json")
