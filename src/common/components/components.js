@@ -19,7 +19,7 @@ angular.module('components', [])
     return {
         templateUrl: 'components/templates/portfolionav.html',
         scope: {
-          projects: "="
+          navobject: "="
         }
     };
   })

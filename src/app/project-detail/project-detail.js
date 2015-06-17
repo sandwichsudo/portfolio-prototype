@@ -18,6 +18,12 @@ angular.module("projectdetail", [])
                 }
               }
             });
+        },
+        navObject:function ($http, navService) {
+           return navService.getNavObject()
+            .then(function (res) {
+              return res;
+            });
         }
        }
     });
@@ -25,9 +31,9 @@ angular.module("projectdetail", [])
   })
 
 
-  .controller("ProjectDetailCtrl", function (project, BASE_URL) {
+  .controller("ProjectDetailCtrl", function (project, navObject, BASE_URL) {
     var projectdetail = this;
-
+    projectdetail.navObject = navObject;
     projectdetail.project = project;
     projectdetail.BASE_URL = BASE_URL;
   });

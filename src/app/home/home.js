@@ -12,6 +12,12 @@ angular.module("home", [])
             .then(function (res) {
               return res.data;
             });
+        },
+        navObject:function ($http, navService) {
+           return navService.getNavObject()
+            .then(function (res) {
+              return res;
+            });
         }
       }
     });
@@ -19,12 +25,13 @@ angular.module("home", [])
 
   })
 
-  .controller("HomeCtrl", function (projects, BASE_URL) {
+  .controller("HomeCtrl", function (projects,navObject, BASE_URL) {
     var home = this;
     home.BASE_URL = BASE_URL;
-    console.log(home);
     home.projects = projects;
-    home.isNavOpen = false;
+    home.navObject = navObject;
+
+    console.log(navObject);
   });
 
 
