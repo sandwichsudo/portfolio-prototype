@@ -23,6 +23,13 @@ header, .guttered{
 	padding-left:$gutter-padding;
 	padding-right:$gutter-padding;
 }
+//remove the guttering at greater than max width
+
+@media (min-width:$max-width){
+	.guttered{
+		padding:0;
+	}
+}
 
 p{
 	margin-bottom:$paragraph-margin;
