@@ -43,7 +43,7 @@ h3{
 }
 
 h4{
-	font-size: 20px;
+	font-size: 17px;
 }
 
 h5{
@@ -52,7 +52,10 @@ h5{
 
 .prominant-title{
 	font-family: "Didactic";
+	color:$primary-text-color;
 }
+
+
 
 //more html boilerplate
 img { -ms-interpolation-mode: bicubic; }

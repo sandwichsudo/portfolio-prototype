@@ -4,7 +4,7 @@ angular.module("home", [])
 
     $stateProvider.state('home', {
       url: '/home',
-      templateUrl: 'home/home.html',
+      templateUrl: 'pages/home/home.html',
       controller: 'HomeCtrl as home',
       resolve: {
         projects: function ($http, portfolioService) {

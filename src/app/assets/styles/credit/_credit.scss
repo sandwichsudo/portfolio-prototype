@@ -1,0 +1,6 @@
+.author,.credit-title{
+	display:inline;
+}
+.credit-title{
+	@extend .prominant-title;
+}

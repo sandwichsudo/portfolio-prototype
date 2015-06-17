@@ -1,0 +1,31 @@
+[
+	{
+		"id":"aeroplane-icon",
+		"item":"Aeroplane Icon",
+		"description":"Created by Ilsur Aptukov from the Noun Project.",
+		"author":"Ilsur Aptukov",
+		"source":"https://thenounproject.com/"
+	},
+	{
+		"id":"home-icon",
+		"item":"Home icon",
+		"description":"Created by Melvin Poppelaars from the Noun Project.",
+		"author":"Melvin Poppelaars",
+		"source":"https://thenounproject.com/"
+	},
+	{
+		"id":"close-icon",
+		"item":"Close icon",
+		"description":"Created by Alex S. Lakas from the Noun Project.",
+		"author":"Alex S. Lakas",
+		"source":"https://thenounproject.com/"
+	},
+	{
+		"id":"box-shadow",
+		"item":"Box shadow helper",
+		"description":"Box shadow helper in Material Design style.",
+		"author":"Florian Kutschera",
+		"source":"https://medium.com/@Florian/freebie-google-material-design-shadow-helper-2a0501295a2d "
+	}
+
+]

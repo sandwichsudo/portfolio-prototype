@@ -4,7 +4,7 @@ angular.module("projectdetail", [])
 
     $stateProvider.state('projectdetail', {
       url: '/project-detail/:id',
-      templateUrl: 'project-detail/project-detail.html',
+      templateUrl: 'pages/project-detail/project-detail.html',
       controller: 'ProjectDetailCtrl as projectdetail',
       resolve: {
         project: function ($http, $stateParams, portfolioService) {

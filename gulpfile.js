@@ -20,6 +20,7 @@ var imagePaths = ['./src/app/assets/images/**/*.*'];
 var fontPaths = ['./src/app/assets/fonts/**/*.*'];
 var dataPath = './data/**/*.json';
 var outputBaseDirectory = "./build/";
+
 var dataBuildDirectory = outputBaseDirectory+'data/';
 var vendorPath = 'src/vendor/**/*.js';
 

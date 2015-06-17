@@ -1,0 +1,9 @@
+<h2>Author Credit</h2>
+<p>Here is a list of cool things I used in making this site. I really appreciate the work done and distributed for free by these fine people - Thanks all!</p>
+<ul>
+	<li ng-repeat="credit in credits">
+		<h3 class="credit-title">{{credit.item}}</h2>
+		<h4 class="author">by {{credit.author}}</h3>
+		<p>{{credit.description}} <a class="page-link" href="credit.source">Check out the source</a></p>
+	</li>
+</ul>

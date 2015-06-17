@@ -31,6 +31,14 @@ angular.module('components', [])
         }
     };
   })
+  .directive('creditlist', function () {
+    return {
+        templateUrl: 'components/templates/creditlist.html',
+        scope: {
+          credits: "="
+        }
+    };
+  })
   .directive('projectinfo', function () {
     return {
         templateUrl: 'components/templates/projectinfo.html',
