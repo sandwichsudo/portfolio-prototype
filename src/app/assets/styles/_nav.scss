@@ -39,15 +39,17 @@ $fadeTime:0.2s;
 	padding-top:20px;
 	background-color: rgba(33, 33, 33, 0.93);
 	overflow:hidden;
-	 @media (max-width:$break-small){
-	  	transition: $fadeTime linear all;
+	@media (max-width:$break-small){
+		transition: $fadeTime linear all;
 		opacity: 1;
 
 		&.ng-hide {
 		    opacity: 0;
 		}
-	  }
-	@media (min-width:$break-small){
+
+	}
+
+	@media (min-width:$break-small) and (max-width:$max-width){
 		$width:$nav-medium-width;
 		width:$width;
 		position: absolute;
@@ -60,6 +62,14 @@ $fadeTime:0.2s;
 			left: - $width;
 		}
 
+	}
+	@media (min-width:$max-width){
+		transition: $fadeTime linear all;
+		opacity: 1;
+		width:$nav-medium-width;
+		&.ng-hide {
+		    opacity: 0;
+		}
 	}
 }
 
