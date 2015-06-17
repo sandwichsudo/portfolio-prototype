@@ -1,0 +1,12 @@
+[
+	{
+		"id":"home",
+		"name":"Home",
+		"cssclass":"home-nav-link"
+	},
+	{
+		"id":"credit",
+		"name":"Credit",
+		"cssclass":"credit-nav-link"
+	}
+]

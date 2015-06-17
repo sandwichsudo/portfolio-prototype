@@ -53,6 +53,17 @@
          x="4.3127594"
          y="2.7774785" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3850">
+      <rect
+         style="fill:#ff0000;fill-opacity:1;stroke:none"
+         id="rect3852"
+         width="50.533623"
+         height="45.357002"
+         x="24.404041"
+         y="27.067444" />
+    </clipPath>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -61,9 +72,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="48.449175"
-     inkscape:cy="43.609422"
+     inkscape:zoom="7.919596"
+     inkscape:cx="49.160915"
+     inkscape:cy="67.343768"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -91,7 +102,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -106,13 +117,6 @@
        width="40"
        height="40"
        x="80.009766"
-       y="973.0152" />
-    <rect
-       style="fill:#ff8080;fill-opacity:1;stroke:none"
-       id="rect2987-7-9"
-       width="40"
-       height="40"
-       x="39.950298"
        y="973.0152" />
     <rect
        style="fill:#ff8080;fill-opacity:1;stroke:none"
@@ -232,6 +236,35 @@
          style="font-size:5px;font-weight:bold;fill:#ffffff;font-family:'\'Helvetica Neue\', Helvetica, Arial-Unicode, Arial, Sans-serif'">Created by Alex S. Lakas</text>
       <text
          id="text4055"
+         font-weight="bold"
+         font-size="5px"
+         y="120"
+         x="0"
+         style="font-size:5px;font-weight:bold;fill:#ffffff;font-family:'\'Helvetica Neue\', Helvetica, Arial-Unicode, Arial, Sans-serif'">from the Noun Project</text>
+    </g>
+    <g
+       id="g3050"
+       transform="matrix(0.65728491,0,0,0.65728491,27.34835,958.23544)"
+       clip-path="url(#clipPath3850)"
+       style="fill:#ffffff">
+      <g
+         id="g3036"
+         style="fill:#ffffff">
+        <path
+           id="path3038"
+           d="m 50,70.716 c -0.38,0 -0.77,-0.051 -1.19,-0.156 -0.153,-0.042 -0.265,-0.084 -0.376,-0.131 L 48.306,70.382 C 48.116,70.317 47.928,70.246 47.75,70.151 47.533,70.035 25.515,58.143 25.515,44.48 c 0,-8.663 6.026,-15.195 14.018,-15.195 3.526,0 7.555,1.787 10.467,4.558 2.913,-2.771 6.941,-4.558 10.468,-4.558 7.991,0 14.018,6.533 14.018,15.195 0,13.663 -22.018,25.555 -22.24,25.674 -0.176,0.094 -0.362,0.164 -0.551,0.229 -0.006,0.002 -0.103,0.035 -0.108,0.038 -0.13,0.056 -0.242,0.098 -0.359,0.13 -0.457,0.114 -0.847,0.165 -1.228,0.165 z"
+           inkscape:connector-curvature="0"
+           style="fill:#ffffff" />
+      </g>
+      <text
+         id="text3040"
+         font-weight="bold"
+         font-size="5px"
+         y="115"
+         x="0"
+         style="font-size:5px;font-weight:bold;fill:#ffffff;font-family:'\'Helvetica Neue\', Helvetica, Arial-Unicode, Arial, Sans-serif'">Created by Sergey Demushkin</text>
+      <text
+         id="text3042"
          font-weight="bold"
          font-size="5px"
          y="120"

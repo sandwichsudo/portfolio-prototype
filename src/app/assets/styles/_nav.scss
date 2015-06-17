@@ -48,7 +48,7 @@ $fadeTime:0.2s;
 		}
 	  }
 	@media (min-width:$break-small){
-		$width:365px;
+		$width:$nav-medium-width;
 		width:$width;
 		position: absolute;
   		left: 0;
@@ -95,7 +95,30 @@ $fadeTime:0.2s;
 	padding:0;
 }
 
+.nav-link-with-icon{
+	padding-left: $gutter-padding + $default-icon-width+ 10px;	
+	position:relative;
+}
+
 .projects-title{
-	padding-left: $gutter-padding + $default-icon-width+ 10px;
-	@include add-icon(1,3,$top:25px,$left:  $gutter-padding);
+	line-height:45px;
+	@extend .nav-link-with-icon;
+	@include add-icon(1,3,$top:6px,$left:  $gutter-padding);
+	margin-bottom:5px;
+}
+
+.home-nav-link{
+	@extend .nav-link;
+	@extend .nav-link-with-icon;
+	@include add-icon(1,2,$top:6px,$left:  $gutter-padding);
+}
+.credit-nav-link{
+	@extend .nav-link;
+	@extend .nav-link-with-icon;
+	@include add-icon(2,2,$top:11px,$left:  $gutter-padding);
+}
+.nav-divide{
+	margin:10px $gutter-padding;
+	border-width: 0 0 0 1px;
+	border-bottom: solid 1px $primary-color-text;
 }

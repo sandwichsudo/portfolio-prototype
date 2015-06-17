@@ -1,14 +1,21 @@
 <div class="nav-container">
 	<nav class="portfolio-navigation" ng-show="navobject.isNavOpen">
 		<div class="nav-content-wrap-background" ng-show="navobject.isNavOpen">
-			<div class="nav-content-wrap">
-				<h3 class="projects-title">Projects</h3>
-				<ul class="nav-list">
-					<li ng-repeat="project in navobject.projects">
-						<a class="nav-link" href="#" ui-sref="projectdetail({id:project.id})">{{::project.name}}</a>
-					</li>
-				</ul>
-			</div>
+
+
+			
+			<ul class="nav-list">
+				<li ng-repeat="page in navobject.pages">
+					<a class="{{page.cssclass}}" href="#" ui-sref="{{::page.id}}">{{::page.name}}</a>
+				</li>
+			</ul>
+			<hr class="nav-divide">			
+			<h3 class="projects-title">Projects</h3>
+			<ul class="nav-list">
+				<li ng-repeat="project in navobject.projects">
+					<a class="nav-link" href="#" ui-sref="projectdetail({id:project.id})">{{::project.name}}</a>
+				</li>
+			</ul>
 		</div>
 	</nav>
 </div>

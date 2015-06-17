@@ -25,7 +25,14 @@
 		"item":"Box shadow helper",
 		"description":"Box shadow helper in Material Design style.",
 		"author":"Florian Kutschera",
-		"source":"https://medium.com/@Florian/freebie-google-material-design-shadow-helper-2a0501295a2d "
+		"source":"https://medium.com/@Florian/freebie-google-material-design-shadow-helper-2a0501295a2d"
+	},
+	{
+		"id":"heart-icon",
+		"item":"Heart Icon",
+		"description":"Created by Sergey Demushkin from the Noun Project.",
+		"author":"Sergey Demushkin",
+		"source":"https://thenounproject.com/search/?q=thanks&i=124244"
 	}
 
 ]
