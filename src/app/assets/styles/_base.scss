@@ -57,3 +57,9 @@ img { -ms-interpolation-mode: bicubic; }
 @media print {
 	img { max-width: 100% !important; }
 }
+
+//angular animate
+.ng-hide-add, .ng-hide-remove {
+    /* ensure visibility during the transition */
+    display: block !important; /* yes, important */
+}
