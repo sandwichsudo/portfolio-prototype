@@ -1,0 +1,8 @@
+.page-link{
+	color:$primary-color-dark;
+	text-decoration: none;
+	border-bottom:solid 1px $link-border-color;
+	&:hover,&:focus{
+		border-bottom-color:$primary-color-dark;		
+	}
+}

@@ -1,0 +1,15 @@
+.two-column-image-wrap{
+	margin-bottom: $paragraph-margin; 
+	overflow: auto;
+	@media(min-width:$break-small){
+		.project-page-image{
+			width:50%;
+			&:first-child{
+				float:left;
+			}
+			&:last-child{
+				float:right;
+			}
+		}
+	}
+}

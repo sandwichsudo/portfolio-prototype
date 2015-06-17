@@ -1,10 +1,10 @@
-.project-detail-item{
-	.project-name{
-		font-family: "Didactic";
-	}
-	.client-name{
-		color:$secondary-text-color;
-	}
+.client-name{
+	color:$secondary-text-color;
+}
+
+.project-name{
+	@extend .prominant-title;
+	color:$primary-text-color;
 }
 
 .project-detail-list{

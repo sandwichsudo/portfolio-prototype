@@ -7,7 +7,8 @@
 		"benefitsDelivered":["Nam commodo aliquet lorem, sed placerat purus dapibus id. Ut et turpis vel sapien vulputate iaculis.","Praesent vel enim diam. Quisque suscipit lacinia vestibulum. Phasellus id dui felis. Morbi nec consequat sem. Morbi dictum auctor maximus.","Aliquam sollicitudin, sapien sit amet cursus posuere, odio mauris semper lacus, quis convallis metus turpis rutrum nisi."],
 		"introParagraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut placerat ligula. Nam commodo aliquet lorem, sed placerat purus dapibus id. Ut et turpis vel sapien vulputate iaculis. Praesent vel enim diam. Quisque suscipit lacinia vestibulum. Phasellus id dui felis. Morbi nec consequat sem. Morbi dictum auctor maximus. Aliquam sollicitudin, sapien sit amet cursus posuere, odio mauris semper lacus, quis convallis metus turpis rutrum nisi.",
 		"conclusion":"Cras vulputate sapien eu nulla tempus commodo. Etiam velit lorem, varius sit amet tellus facilisis, volutpat elementum leo. Phasellus mollis lobortis turpis sit amet fermentum. Aenean dapibus dapibus dui, vitae facilisis odio. Quisque pellentesque erat sit amet urna commodo ornare. Etiam volutpat odio id mi facilisis sodales.",
-		"hashtags":["sass","jquery","jsp","hybris","grunt","git","jira"] 
+		"hashtags":["sass","jquery","jsp","hybris","grunt","git","jira"],
+		"url":"http://shop.ee.co.uk/mobile-phones/pay-monthly/gallery" 
 	},
 	{
 		"id":"tfl_oyster",
@@ -17,7 +18,8 @@
 		"benefitsDelivered":["Nam commodo aliquet lorem, sed placerat purus dapibus id. Ut et turpis vel sapien vulputate iaculis.","Praesent vel enim diam. Quisque suscipit lacinia vestibulum. Phasellus id dui felis. Morbi nec consequat sem. Morbi dictum auctor maximus.","Aliquam sollicitudin, sapien sit amet cursus posuere, odio mauris semper lacus, quis convallis metus turpis rutrum nisi."],
 		"introParagraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut placerat ligula. Nam commodo aliquet lorem, sed placerat purus dapibus id. Ut et turpis vel sapien vulputate iaculis. Praesent vel enim diam. Quisque suscipit lacinia vestibulum. Phasellus id dui felis. Morbi nec consequat sem. Morbi dictum auctor maximus. Aliquam sollicitudin, sapien sit amet cursus posuere, odio mauris semper lacus, quis convallis metus turpis rutrum nisi.",
 		"conclusion":"Cras vulputate sapien eu nulla tempus commodo. Etiam velit lorem, varius sit amet tellus facilisis, volutpat elementum leo. Phasellus mollis lobortis turpis sit amet fermentum. Aenean dapibus dapibus dui, vitae facilisis odio. Quisque pellentesque erat sit amet urna commodo ornare. Etiam volutpat odio id mi facilisis sodales.",
-		"hashtags":["sass","jquery",".Net","Razor","qunit","hogan","grunt","git","bitbucket","jira"] 
+		"hashtags":["sass","jquery",".Net","Razor","qunit","hogan","grunt","git","bitbucket","jira"],
+		"url":"example.com" 
 	},
 	{
 		"id":"tfl_ruc",
@@ -27,6 +29,7 @@
 		"benefitsDelivered":["Nam commodo aliquet lorem, sed placerat purus dapibus id. Ut et turpis vel sapien vulputate iaculis.","Praesent vel enim diam. Quisque suscipit lacinia vestibulum. Phasellus id dui felis. Morbi nec consequat sem. Morbi dictum auctor maximus.","Aliquam sollicitudin, sapien sit amet cursus posuere, odio mauris semper lacus, quis convallis metus turpis rutrum nisi."],
 		"introParagraph":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut placerat ligula. Nam commodo aliquet lorem, sed placerat purus dapibus id. Ut et turpis vel sapien vulputate iaculis. Praesent vel enim diam. Quisque suscipit lacinia vestibulum. Phasellus id dui felis. Morbi nec consequat sem. Morbi dictum auctor maximus. Aliquam sollicitudin, sapien sit amet cursus posuere, odio mauris semper lacus, quis convallis metus turpis rutrum nisi.",
 		"conclusion":"Cras vulputate sapien eu nulla tempus commodo. Etiam velit lorem, varius sit amet tellus facilisis, volutpat elementum leo. Phasellus mollis lobortis turpis sit amet fermentum. Aenean dapibus dapibus dui, vitae facilisis odio. Quisque pellentesque erat sit amet urna commodo ornare. Etiam volutpat odio id mi facilisis sodales.",
-		"hashtags":["sass","jquery",".Net","Razor","qunit","hogan","grunt","git","bitbucket","jira"] 
+		"hashtags":["sass","jquery",".Net","Razor","qunit","hogan","grunt","git","bitbucket","jira"],
+		"url":"example.com" 
 	}
 ]	

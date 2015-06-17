@@ -30,4 +30,12 @@ angular.module('components', [])
           projects: "="
         }
     };
+  })
+  .directive('projectinfo', function () {
+    return {
+        templateUrl: 'components/templates/projectinfo.html',
+        scope: {
+          project: "="
+        }
+    };
   });

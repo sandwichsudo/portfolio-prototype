@@ -16,10 +16,17 @@ header, main,.nav-container{
 	max-width:$max-width;
 	min-width: $min-width;
 	margin: 0 auto;
+
+}
+
+header, .guttered{
 	padding-left:$gutter-padding;
 	padding-right:$gutter-padding;
 }
 
+p{
+	margin-bottom:$paragraph-margin;
+}
 
 h1{
 	font-size: 50px;
@@ -43,8 +50,8 @@ h5{
 	font-size: 17px;
 }
 
-.guttered{
-	padding-left:$gutter-padding;
+.prominant-title{
+	font-family: "Didactic";
 }
 
 //more html boilerplate
