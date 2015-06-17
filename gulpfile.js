@@ -95,4 +95,4 @@ gulp.task('watch', function () {
     gulp.watch(dataPath, ['reload:json']);
 });
 
-gulp.task('default', ['compile','webserver','watch']);
+gulp.task('default', ['webserver','watch']);
