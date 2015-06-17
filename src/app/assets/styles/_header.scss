@@ -12,6 +12,7 @@
 		font-weight:normal;
 	}
 	position:relative;
+	@include box-shadow-helper(2);
 }
 
 .toggle-nav{
@@ -19,7 +20,7 @@
 	@extend .blue-round-button;
 	position:absolute;
 	bottom:-30px;
-	right:10px;
+	right:$gutter-padding;
 	z-index:2;
 }
 
@@ -37,7 +38,7 @@
 	@extend .blue-round-button;
 	position:absolute;
 	top:-14px;
-	right:10px;
+	right:$gutter-padding;
 	z-index:2;
 	@include add-icon(1,2,$top:10px,$right: 9px);
 }

@@ -21,11 +21,11 @@
 	-webkit-transition: all 250ms;
 	-moz-transition: all 250ms;
 	transition: all 250ms;
-	@include box-shadow-helper(1);
+	@include box-shadow-helper(3);
 	outline:none;
 
 	&:focus,&:hover{
-		 @include box-shadow-helper(3);
+		 @include box-shadow-helper(5);
 		-webkit-transform: translateY(-5px);
 		-moz-transform: translateY(-5px);
 		transform: translateY(-5px);
